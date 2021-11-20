@@ -3,11 +3,22 @@ import User from './User';
 import classes from './UserList.module.css';
 
 const UserList = props => {
+    if (props.users.length === 0) {
+        return (null);
+    }
+
     return (
         <Card className={classes.users}>
-            <User username={'Test'} age={32}></User>
-            <User username={'Test'} age={32}></User>
-            <User username={'Test'} age={32}></User>
+            {props.users.map(user => {
+                return (
+                    <User
+                        username={user.username}
+                        age={user.age}
+                        key={user.id}
+                    >
+                    </User>
+                );
+            })}
         </Card>
     );
 };
