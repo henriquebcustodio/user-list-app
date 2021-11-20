@@ -1,0 +1,24 @@
+.input {
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 40rem;
+}
+
+.input label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+.input input:focus {
+    outline: none;
+    border-color: blueviolet;
+}

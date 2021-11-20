@@ -1,7 +1,11 @@
+import AddUser from './components/Users/AddUser';
+import UserList from './components/Users/UserList';
+
 function App() {
     return (
         <div className="App">
-            Hello World
+            <AddUser></AddUser>
+            <UserList></UserList>
         </div>
     );
 }
